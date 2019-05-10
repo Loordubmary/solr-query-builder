@@ -104,7 +104,9 @@ The `setQuery()` is used to perform search function.
 
 The solarium Query format is below,
 
-```$query->setQuery('field_name:"search_key"');```
+```
+$query->setQuery('field_name:"search_key"');
+```
 
 `field_name` is refer to what type of thing we found. For example price, id or some other.
 
@@ -132,7 +134,9 @@ $facetSet->createFacetField('field_name_shortly')->setField('field_name');
 
 `field_name_shortly` is a Facet name. It is help to retrieve the facet result using this name.
 
-``` $facet = $result->getFacetSet()->getFacet('field_name_shortly'); ```
+``` 
+$facet = $result->getFacetSet()->getFacet('field_name_shortly'); 
+```
 
 It is return output as unique value with total count.
 
@@ -217,7 +221,9 @@ For example, we need products details based on some range using this option.
 
 This code format is below,
 
-``` $query->setQuery('price:[ 0.50 TO 3 ]'); ```
+``` 
+$query->setQuery('price:[ 0.50 TO 3 ]'); 
+```
 
 In the above line `[ 0.50 TO 2 ]` is refer to list the record only the price range `between 0.50 to 3`.
 
